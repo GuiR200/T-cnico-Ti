@@ -1,0 +1,30 @@
+h1 {
+    color: red; 
+}
+
+nav{
+    background-color: salmon;
+    padding: 10px;
+}
+
+#dadosPessoais{
+    background-color: darkblue;
+    color: white;
+}
+
+.titulo{
+    color: green;
+    font-weight: bold;
+}
+
+@media (max-width: 414px) {
+    #dadosPessoais{
+        background-color: rgb(228, 17, 193);
+    }
+}
+
+@media (min-width: 415px) and (max-width: 820px){
+    #dadosPessoais{
+        background-color: aquamarine;
+    }
+}

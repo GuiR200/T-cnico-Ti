@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    <h2>Erro - <?php echo $_GET['mensagem'];  ?></h2>
+
     <form action="cadastro.php" method="post">
         <input type="text" name="nomeCompleto" placeholder="Digite seu Nome completo" required maxlength="50"><br><br>
         <input type="number" name="Idade" placeholder="Digite sua Idade" required min="0"><br><br>

@@ -1,7 +1,8 @@
 <?php
 
 function exibeErro($mensagem){
-    echo "<h2>Erro - $mensagem</h2>";
+    //echo "<h2>Erro - $mensagem</h2>";
+    header("location:index.php?mensagem=$mensagem");
 }
 
 function formataNome($nome){
@@ -58,5 +59,5 @@ if(isset($_POST['nomeCompleto'])
     }
 
 } else {
-    exibeErro('Acesse pelo formulário.');
+    header('location:index.php');
 }
